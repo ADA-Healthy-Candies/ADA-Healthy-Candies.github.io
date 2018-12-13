@@ -1,0 +1,34 @@
+# Set theme
+remote_theme: daviddarnes/alembic
+
+# File excludes
+exclude:
+- README.md
+- Gemfile
+- Gemfile.lock
+
+# Set plugins
+plugins:
+- jekyll-sitemap
+- jekyll-mentions
+- jekyll-paginate
+- jekyll-seo-tag
+- jekyll-redirect-from
+- jekyll-default-layout
+- jekyll-feed
+- jemoji
+- jekyll-remote-theme
+
+# Site settings
+url: 'https://ADA-Healthy-Candies.github.io/'
+baseurl: ''
+title: Healthy-candies
+description: "ADA Project #EPFL" # Site description and default description, also used in jekyll-seo-tag
+baseurl: "" # the subpath of your site, e.g. /blog
+encoding: utf-8 # Make sure the encoding is right
+lang: en-GB # Set the site language
+permalink: pretty
+logo: ""
+
+includes:
+  assets
