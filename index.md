@@ -51,7 +51,24 @@ The article [Impact of color on marketing](https://www.emeraldinsight.com/doi/ab
 * Orange, a blend of red and yellow, naturally lends itself to food as another appetizing color.
 * Cyan-blue connotes pops of flavor, and thus it is widely used for sweets and desserts.
 
+<button class="button" style="background: grey" onclick="setCatIframe('red')">
+    Red
+</button>
+<button class="button" style="background: grey" onclick="setCatIframe('cyan-blue')">
+    Cyan-blue
+</button>
+<button class="button" style="background: grey" onclick="setCatIframe('blue-magenta')">
+    Blue-magenta
+</button>
+
+Select a one of all hues:
+<select id="catPlotSelect"></select>
+{% include plot.html  width="100%" height="600" src="assets/plots/cat_red.html" id="catPlotIframe" %}
+
+
 #### Does green mean helathy ?
+
+
 Health and wellness trends in food and drink products have increasingly gathered momentum in the past couple of years as consumers turn to less processed and more natural alternatives to their usual products.
 Being aware of that, do marketing teams use green , which connotes eco-friendliness and healthy, on packagings to make nutrition-poor foods look in a healthier light ?  
 
