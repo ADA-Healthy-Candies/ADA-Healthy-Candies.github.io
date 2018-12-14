@@ -1,0 +1,9 @@
+<div class="div-plot-iframe">
+    <iframe 
+        src="{{ include.src }}"
+        frameborder="0" 
+        scrolling="no"
+        {{ include.width ? include.width | prepend: 'width="' | append: '"' }}
+        {{ include.height ? include.height | prepend: 'height="' | append: '"' }}>
+    </iframe>
+</div>

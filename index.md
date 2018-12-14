@@ -40,7 +40,7 @@ According to AdAge (weekly magazine that covers all aspects of the US advertisin
 
 The choice of colors of the packaging, as explained above, is very important to simulate the desired impact on the consumer. So in food industry, what colors are employed to gain customer's attention and increase their appetite ? 
 
-{% include figure.html image="assets/images/colors.png" width="700" height="900" %}
+{% include plot.html  width="100%" height="600" src="assets/plots/hue-dominance.html" %}
 
 From the figure 1 above, 4 colors are undoubtly dominant on the products packagings: red, orange, yellow and cyan-blue. 
 But how can we explain this trend ? 

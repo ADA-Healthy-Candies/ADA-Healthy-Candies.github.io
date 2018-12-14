@@ -8,3 +8,8 @@ styles: true
 .container {
     max-width: 1920px;
 }
+
+.div-plot-iframe{
+    padding-bottom: 5px;
+    background: radial-gradient(ellipse closest-side,rgb(200, 200, 200), rgb(210, 210, 210));
+}
