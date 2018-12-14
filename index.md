@@ -66,6 +66,12 @@ Select a one of all hues:
 {% include plot.html  width="100%" height="600" src="assets/plots/cat_red.html" id="catPlotIframe" %}
 
 
+
+Select a one of the nutri facts:
+<select id="nutriPlotSelect"></select>
+{% include plot.html  width="100%" height="600" src="assets/plots/CDF_sugars_100g.html" id="nutriPlotIframe" %}
+
+
 #### Does green mean helathy ?
 
 
