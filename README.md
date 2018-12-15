@@ -1,7 +1,8 @@
 # Healthy Candies | Data Story
 
 Data Story is available [here](https://ADA-Healthy-Candies.github.io/).
-
+The content of the website is released under the Creative Commons Attribution 4.0 license.
+The code contained in the repo is released under the BSD 2-Clause "Simplified" License.
 
 ## Run locally
 
