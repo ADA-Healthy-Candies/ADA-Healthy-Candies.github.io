@@ -9,7 +9,12 @@ styles: true
     max-width: 1920px;
 }
 
-.div-plot-iframe{
+.div-plot-iframe {
     padding-bottom: 5px;
     background: radial-gradient(ellipse closest-side,rgb(200, 200, 200), rgb(230, 230, 230));
+}
+
+.material-icons {
+    display: inline-flex;
+    vertical-align: middle;
 }

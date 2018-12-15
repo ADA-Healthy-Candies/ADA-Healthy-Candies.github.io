@@ -52,7 +52,7 @@ The article [Impact of color on marketing](https://www.emeraldinsight.com/doi/ab
 
 * Red and yellow are the chief food colors, evoking the tastebuds and stimulating the appetite. Both colors are also effective at grabbing attention. The fast food industry(Think of Macdonald's packagings) has claimed this combination for a good reason—because it is effective. 
 * Orange, a blend of red and yellow, naturally lends itself to food as another appetizing color.
-* Cyan-blue connotes pops of flavor, and thus it is widely used for sweets and desserts.
+* <a onclick="setCatIframe('cyan-blue')">Cyan-blue{% include material-ui-icon.html type="zoom_in" %}</a> connotes pops of flavor, and thus it is widely used for sweets and desserts.
 
 <button class="button" style="background: grey" onclick="setCatIframe('red')">
     Red
