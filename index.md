@@ -11,6 +11,9 @@ Each contributor can add or edit food items based on the information explicitly 
 
 ### Nutriscore: Replacing the nutrition facts panel
 
+{% include figure.html image="assets/images/nutri_facts.png"  width="100%" %}
+
+
 {% include figure.html image="assets/images/nutriscore.png"  width="300" height="500" %}
 
 The Nutrition Facts panel first began appearing on food packaging in the early 1990s (implementation deadline 
