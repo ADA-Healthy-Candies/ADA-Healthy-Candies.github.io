@@ -9,6 +9,9 @@ styles: true
     font-weight: 300;
 }
 
+.center {
+    text-align: center;
+}
 .container {
     max-width: 1920px;
 }
@@ -21,7 +24,7 @@ styles: true
 
 @media screen and (max-width: 70em) {
     .content {
-        width:90%
+        width:100%
     }
 }
 

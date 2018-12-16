@@ -1,5 +1,5 @@
 ---
-title: "Tales from the <i>Open Food Facts</i> universe"
+title: "Tales from the <em>Open Food Facts</em> universe"
 feature_image: "assets/images/feature_image.jpg"
 layout: post
 ---
@@ -14,25 +14,39 @@ Until the early 90s people bought products without really knowing their nutritio
 {% include figure.html image="assets/images/nutri_facts.png"  width="100%" %}
 
 
-The data contained in those tables is transcribed in the *Open Food Facts* database (more info on the Open Food Facts project is available at the end \[link\]). This information is at the core of the two (data) stories we wrote for you today:
+<div id="backFromOffInfo">
+<!-- for the backward link -->
+</div>
 
-- “Green mythology” <br>
-    &emsp; &emsp; *Exploring food packaging colours with nutritional properties in mind.*
-- “Show me your nutrients, and I’ll tell you who you are” <br>
-    &emsp; &emsp; *On the nutritional consistency of food product categories*
+The data contained in those tables is transcribed in the *Open Food Facts* database (more info on the *Open Food Facts Project* is available [towards the end](\#OffInfo)). This information is at the core of the two (data) stories we wrote for you today:
+
+<p class="center">
+    <a href="\#storyGreen">“Green mythology”</a> <br>
+    <em>Exploring food packaging colours with nutritional properties in mind.</em> 
+    <br>
+    <br>
+    <a href="\#storyCluster">“Show me your nutrients, and I’ll tell you who you are”</a> <br> 
+    <em>On the nutritional consistency of food product categories</em>
+</p>
 
 ***<center>Enjoy / Comment / Share</center>***
 
 <hr>
 
+<div id="storyGreen">
+</div>
+
 # Green mythology
-Exploring food packaging colours with nutritional properties in mind. TODO bigger
+
+##### *Exploring food packaging colours with nutritional properties in mind* 
+
+<br>
 
 Have you ever heard of *greenwashing*? When [*Jay Westervelt*](https://en.wikipedia.org/wiki/Jay_Westerveld) coined this term in 1986, he had in mind companies or organizations that attempt to falsely present their products as “environmentally friendly”. With the turn toward healthier food consumption habits gathering momentum over the past couple of years, critics of the phenomenon have been increasingly vocal about companies using the green colour to appeal to consumers interested in natural, organic, less processed alternatives for their dietary needs. As an especially sarcastic [*one*](http://www.businesspundit.com/the-top-25-greenwashed-products-in-america/) said, “that green tint may have more to do with dollars than chlorophyll”.
 
-This phenomenon inspired us to try and learn more about the ties between green (or even other colours) and the nutritional properties of a product. Using the *Open Food Facts *database, we extracted twelve different hues from the images of ≈40 000 food product packagings. We analysed the presence or dominance of each hue on the packaging of the food product, globally, food category-wise and in terms of its nutritional composition of the products.
+This phenomenon inspired us to try and learn more about the ties between green (or even other colours) and the nutritional properties of a product. Using the *Open Food Facts* database, we extracted twelve different hues from the images of ≈40 000 food product packagings. We analysed the presence or dominance of each hue on the packaging of the food product, globally, food category-wise and in terms of its nutritional composition of the products.
 
-Do companies actively use green on their packagings in order to create an association with some mythical nutritional “benefits”? Let’s find out!
+**Do companies actively use green on their packagings in order to create an association with some mythical nutritional “benefits”? Let’s find out!**
 
 ## Food packaging: a marketing medium
 
@@ -48,12 +62,12 @@ Indeed, when we rank each colour based on its dominance on a product packaging, 
 {% include plot.html  width="100%" height="600" src="assets/plots/hue-dominance.html" %}
 
 
-Is there any explanation behind this trend?
+*Is there any explanation behind this trend?*
 
 The scientific article [*Impact of color on marketing*](https://www.emeraldinsight.com/doi/abs/10.1108/00251740610673332) explains that colour is used to differentiate a brand from its competitors by influencing the mood and the feelings of the consumer. The three dominant colours we have identified are known for their strong impact on customers’ attention and appetite. For instance, we learn from the above article that:
 
 - "The red colour stimulates appetite because of its effect on our metabolism",
-- "The yellow colour is also employed \[to\] gain customers’ attention, increase their appetite, and encourage them to eat".
+- "The yellow colour is also employed to gain customers’ attention, increase their appetite, and encourage them to eat".
 
 As a result, it's not surprising to witness that food manufacturers use those three hues a lot on their packagings.
 
@@ -77,7 +91,7 @@ Other than that, we discovered some very clear trends:
 
 - <a onclick="setCatIframe('blue')">*Blue*{% include material-ui-icon.html type="zoom_in" %}</a> is mainly used for dairies and seafood packagings,
 - <a onclick="setCatIframe('red')">*Red*{% include material-ui-icon.html type="zoom_in" %}</a> is very frequent on meat products: about 68% of meat packagings contains this hue,
-- <a onclick="setCatIframe('magenta')">*Magenta*{% include material-ui-icon.html type="zoom_in" %}</a> and <a onclick="setCatIframe('pink')">*Pink*{% include material-ui-icon.html type="zoom_in" %}</a> are mostly present on sandwiches,
+- <a onclick="setCatIframe('magenta')">*Magenta*{% include material-ui-icon.html type="zoom_in" %}</a> and <a onclick="setCatIframe('pink')">*pink*{% include material-ui-icon.html type="zoom_in" %}</a> are mostly present on sandwiches,
 - Green-related hues (<a onclick="setCatIframe('green')">*green*{% include material-ui-icon.html type="zoom_in" %}</a>, <a onclick="setCatIframe('yellow-green')">*yellow-green*{% include material-ui-icon.html type="zoom_in" %}</a>, <a onclick="setCatIframe('green-cyan')">*green-cyan*{% include material-ui-icon.html type="zoom_in" %}</a>) are used in a wide variety of products with an emphasis on beverages and spreads.
 
 *You can explore other trends using the select field below.*
@@ -91,28 +105,43 @@ Other than that, we discovered some very clear trends:
 
 So, what about greenwashing? Are there food products that have a *greenish* hue as their dominant colour on their packaging, while being particularly poor nutritionally?
 
-To do so, we compared the density of the *Nutri-Score *(more info on what is the *Nutri-Score *is available towards the end \[LINK\]) for products that have either,* yellow-green*, *green* or *green-cyan* as their dominant packaging colour to all other products. What we can see below is that, generally speaking, green is indeed a determinant factor when assessing the quality of a product: the green curve closely resemble the dashed black one but is shifted towards healthier values of Nutri-Score. Also we cannot observe any suspect statistical behaviour in the tail of the green distribution; which would be correlated with an absence of greenwashing.
+<div id="backFromNutriScoreInfo">
+<!-- for the backward link -->
+</div>
+
+To do so, we compared the density of the *Nutri-Score* (more info on what is the *Nutri-Score* is available [towards the end](\#NutriScoreInfo)) for products that have either, *yellow-green*, *green* or *green-cyan* as their dominant packaging colour to all other products. What we can see below is that, generally speaking, green is indeed a determinant factor when assessing the quality of a product: the green curve closely resemble the dashed black one but is shifted towards healthier values of Nutri-Score. Also we cannot observe any suspect statistical behaviour in the tail of the green distribution; which would be correlated with an absence of greenwashing.
 
 {% include plot.html  width="100%" height="600" src="assets/plots/green_vs_all_KDE_energy_100g.html" %}
 
 If we look at another summary metric regarding how healthy a product is, i.e. the energy you would get from eating 100g of it; we can see a slightly different trend. There is a slight bump towards the end of the curves. Had this bump only been present on the green curve it would have meant that there is clearly a suspicious use of this colour. Here we cannot really conclude.
 
-{% include plot.html  width="100%" height="600" src="assets/plots/green_vs_all_KDE_nutrition-score-fr_100g.html"  %}
+{% include plot.html  width="100%" height="600" src="assets/plots/green_vs_all_KDE_nutrition-score-fr_100g.html" %}
 
 
 Even if we cannot mathematically conclude on the existence of greenwashing in the food industry, we looked a bit closer at the products located in the (last) bump of the green energy distribution and we found some clear example of it.
 
-Such as this [*chorizo*](https://world.openfoodfacts.org/product/26013077/chorizo-le-flutiau)* *which is rated with a *nice* E on the Nutri-Score scale and has 1 900 Kj/100g; while using a lot green on its packaging for no obvious reason.
+Such as this [*chorizo*](https://world.openfoodfacts.org/product/26013077/chorizo-le-flutiau) which is rated with a *nice* E on the Nutri-Score scale and has 1 900 Kj/100g; while using a lot green on its packaging for no obvious reason.
+{% include figure.html image="assets/images/chorizo.jpg" width="50%" %}
+
+
 
 We also found a bunch of “BIO” (“organic” in French) products that proudly, and heavily, use green because it is the colour associated with that label. The issue is that some of these products have extremely bad nutritional properties and that the use of green here could be misinterpreted.
 
 For instance, those [*“organic” biscuits*](https://world.openfoodfacts.org/product/3263852925311/bio-biscuits-tablette-chocolat-au-lait-leader-price) are rated with an E on the Nutri-Score scale and have an energy value of 2 188 Kj/100g.
 
+{% include figure.html image="assets/images/cookies.jpg" width="50%" %}
+
+
 At the end we should be aware that green is not always synonymous with healthy.
 
 
 <hr>
+
+<center>
+<em>
 Dear readers, it’s time to switch to our second thrilling story!
+</em>
+</center>
 <hr>
 
 
@@ -122,14 +151,19 @@ Dear readers, it’s time to switch to our second thrilling story!
 
 
 
-
+<div id="storyCluster">
+</div>
 
 # Show me your nutrients, and I’ll tell you who you are
-*On the nutritional consistency of food product categories*
+##### *On the nutritional consistency of food product categories*
+
+<br> 
+
 
 When we talk about nutrition and health-related dieting, we usually share advice, insights and concerns in terms of food product categories. We talk about things like low-fat yoghurt, whole-grain pasta or sugar-free chocolate. These categories are just abstractions representing large collections of products, manufactured by different brands in different countries and made from different ingredients. Intuitively, **we all think that product categories are nutritionally consistent**, such that any product inside that category can effectively supplement each other in, say, a diet plan. **But is that a fact?** With nutrition currently in the spotlight and [*half of consumers*](https://www.labelinsight.com/shopper-trends) adhering to a particular nutrition plan, this issue is hotter than ever.
 
-In our analysis, **we set out to find if product categories are homogeneous enough in terms of nutritional composition** - and different enough from other categories - to support this popular belief. If this sounds to you like a regular comparative analysis that starts from categories and investigates the nutrients of their products, you are not alone.
+In our analysis, **we set out to find if product categories are homogeneous enough in terms of nutritional composition** - and different enough from other categories - to support this popular belief.
+
 
 ## Lost in abstraction, *or how we ended up with a clustering task*
 
@@ -139,7 +173,7 @@ A solution that instantly came to mind had to do with the textual information ab
 
 Hopeless about finding a starting point that could lead us to nutrients, we came up with a new idea: why not start from the end? Why not start from the nutrients themselves and work our way back? If product categories are nutritionally consistent and different from each other, then it should be possible to think of them as groups of products that share strong nutritional similarities.
 
-In other words, **we reformulated our analysis as an unsupervised task. We did not take category information as our data; **we clustered products based on their nutritional composition and attempted to discover the categories ourselves**. Clusters of nutritionally similar products that hint at a specific product category indicate that this category *might* be nutritionally consistent. Reversely, if more than one cluster represent the same product category, then this category *might not* be nutritionally consistent.
+In other words, **we reformulated our analysis as an unsupervised task**. We did not take category information as our data; **we clustered products based on their nutritional composition and attempted to discover the categories ourselves**. Clusters of nutritionally similar products that hint at a specific product category indicate that this category *might* be nutritionally consistent. Reversely, if more than one cluster represent the same product category, then this category *might not* be nutritionally consistent.
 
 ## Setting up the clustering model
 
@@ -165,25 +199,42 @@ The notion of nutritional consistency inside many categories makes it possible t
 
 Finally, we saw that our DBSCAN model was able to extract clusters that represent actual product categories using only nutritional information. In the context of the *Open Food Facts* project, this could lead to a new way of categorizing products and impute missing category labels.
 
+<hr>
 
+#### More info
 
-# More info
+<br>
 
-Regarding the Open Food Facts Project
+<div id="OffInfo">
+</div>
+
+##### Regarding the *Open Food Facts Project*
 
 The [*Open Food Facts*](https://world.openfoodfacts.org/data) database is a community built database gathering information about food products from all around the world. It is freely available under the [*Open Database License*](https://opendatacommons.org/licenses/odbl/1.0/) and gives access to many contributed information related to several hundred thousands of products: list of ingredients, nutritional information, food category, images, etc.
+<p class="center">
+<a href="#backFromOffInfo"><em>Back to where this was referenced.</em></a>
+</p>
+<br>
 
-Regarding the Nutri-Score
+<div id="NutriScoreInfo">
+</div>
 
-Some institutions, including the French government, have tried to summarize even more the nutritional facts of the products to facilitate the understanding of consumers. As a result, [*researchers have come up*](https://world.openfoodfacts.org/nutriscore) with a decision tree that maps a nutrition fact table to a value between approximately -10 (best nutritional quality) and +40 (worst nutritional quality); this value, which is known as the* Nutri-Score*, is then projected on a scale of 5 levels: from class A, the healthiest products, to class E, the least ones.
+##### Regarding the Nutri-Score
+
 {% include figure.html image="assets/images/nutriscore.png"  width="300" height="500" %}
 
+Some institutions, including the French government, have tried to summarize even more the nutritional facts of the products to facilitate the understanding of consumers. As a result, [*researchers have come up*](https://world.openfoodfacts.org/nutriscore) with a decision tree that maps a nutrition fact table to a value between approximately -10 (best nutritional quality) and +40 (worst nutritional quality); this value, which is known as the *Nutri-Score*, is then projected on a scale of 5 levels: from class A, the healthiest products, to class E, the least ones.
+<p class="center">
+<a href="#backFromNutriScoreInfo"><em>Back to where this was referenced.</em></a>
+</p>
 
-Credits
+<br>
+
+##### Credits
 
 - Cover image is in the public domain: [*https://flic.kr/p/QJUosJ*](https://flic.kr/p/QJUosJ),
-- Nutri facts banner: assembly of pictures from Open Food Facts (released under [*CC BY-SA 3.0*](https://creativecommons.org/licenses/by-sa/3.0/)),
-- Packaging images taken from Open Food Facts (released under [*CC BY-SA 3.0*](https://creativecommons.org/licenses/by-sa/3.0/)),
+- Nutri facts banner: assembly of pictures from *Open Food Facts* (released under [*CC BY-SA 3.0*](https://creativecommons.org/licenses/by-sa/3.0/)),
+- Packaging images taken from *Open Food Facts* (released under [*CC BY-SA 3.0*](https://creativecommons.org/licenses/by-sa/3.0/)),
 - Full data analysis is available on [*Github*](https://github.com/striantafyllouEPFL/healthy-candies) (released under BSD 2-Clause "Simplified" License),
 
 The content of this website [*is released*](https://github.com/ADA-Healthy-Candies/ADA-Healthy-Candies.github.io) under CC BY 4.0 (Attribution 4.0 International).
