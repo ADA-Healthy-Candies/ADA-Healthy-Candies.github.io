@@ -9,6 +9,18 @@ styles: true
     max-width: 1920px;
 }
 
+@media screen and (min-width: 70em) {
+    .content {
+        width:62%
+    }
+}
+
+@media screen and (max-width: 70em) {
+    .content {
+        width:90%
+    }
+}
+
 .div-plot-iframe {
     padding-bottom: 5px;
     background: radial-gradient(ellipse closest-side,rgb(200, 200, 200), rgb(230, 230, 230));
