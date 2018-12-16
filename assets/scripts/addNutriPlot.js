@@ -27,7 +27,9 @@ selectNutri.onchange = (evt) => setNutriIframe(evt.target.value);
 
 NUTRI_COLS.forEach(nutriFact => {
     let option = document.createElement("option");
-    option.text = nutriFact.replace(/^\w/, c => c.toUpperCase());;
+    let text = nutriFact.replace(/^\w/, c => c.toUpperCase());
+    text = text.split('_').join(' /');
+    option.text = text;
     option.value = nutriFact;
     selectNutri.add(option);
 })
