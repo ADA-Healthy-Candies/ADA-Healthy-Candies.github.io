@@ -44,7 +44,7 @@ The data contained in those tables is transcribed in the *Open Food Facts* datab
 
 Have you ever heard of *greenwashing*? When [*Jay Westervelt*](https://en.wikipedia.org/wiki/Jay_Westerveld) coined this term in 1986, he had in mind companies or organizations that attempt to falsely present their products as “environmentally friendly”. With the turn toward healthier food consumption habits gathering momentum over the past couple of years, critics of the phenomenon have been increasingly vocal about companies using the green colour to appeal to consumers interested in natural, organic, less processed alternatives for their dietary needs. As an especially sarcastic [*one*](http://www.businesspundit.com/the-top-25-greenwashed-products-in-america/) said, “that green tint may have more to do with dollars than chlorophyll”.
 
-This phenomenon inspired us to try and learn more about the ties between green (or even other colours) and the nutritional properties of a product. Using the *Open Food Facts* database, we extracted twelve different hues from the images of ≈40 000 food product packagings. We analysed the presence or dominance of each hue on the packaging of the food product, globally, food category-wise and in terms of its nutritional composition of the products.
+This phenomenon inspired us to try and learn more about the ties between green (or even other colours) and the nutritional properties of a product. Using the *Open Food Facts* database, we extracted twelve different hues from the images of ≈40&nbsp;000 food product packagings. We analysed the presence or dominance of each hue on the packaging of the food product, globally, food category-wise and in terms of its nutritional composition of the products.
 
 **Do companies actively use green on their packagings in order to create an association with some mythical nutritional “benefits”? Let’s find out!**
 
@@ -65,7 +65,6 @@ Indeed, when we rank each colour based on its dominance on a product packaging, 
 *Is there any explanation behind this trend?*
 
 The scientific article [*Impact of color on marketing*](https://www.emeraldinsight.com/doi/abs/10.1108/00251740610673332) explains that colour is used to differentiate a brand from its competitors by influencing the mood and the feelings of the consumer. The three dominant colours we have identified are known for their strong impact on customers’ attention and appetite. For instance, we learn from the above article that:
-
 - "The red colour stimulates appetite because of its effect on our metabolism",
 - "The yellow colour is also employed to gain customers’ attention, increase their appetite, and encourage them to eat".
 
@@ -88,7 +87,6 @@ As you can see below, we cannot really draw any conclusions about a product’s 
 Does the picture change when we look at product categories instead? From this new point of view (see plot below), we get a better understanding of the surprising distribution nutri-facts related to products with the <a onclick="setCatIframe('blue-magenta')">*blue-magenta*{% include material-ui-icon.html type="zoom_in" %}</a> hue: this hue is mostly used on sugary snacks and desserts, products that are expected to have unhealthy properties.
 
 Other than that, we discovered some very clear trends:
-
 - <a onclick="setCatIframe('blue')">*Blue*{% include material-ui-icon.html type="zoom_in" %}</a> is mainly used for dairies and seafood packagings,
 - <a onclick="setCatIframe('red')">*Red*{% include material-ui-icon.html type="zoom_in" %}</a> is very frequent on meat products: about 68% of meat packagings contains this hue,
 - <a onclick="setCatIframe('magenta')">*Magenta*{% include material-ui-icon.html type="zoom_in" %}</a> and <a onclick="setCatIframe('pink')">*pink*{% include material-ui-icon.html type="zoom_in" %}</a> are mostly present on sandwiches,
@@ -99,7 +97,7 @@ Other than that, we discovered some very clear trends:
 {% include plot.html  width="100%" height="600" src="assets/plots/cat_blue-magenta.html" id="catPlotIframe" %}
 
 
-
+<br>
 
 ## Greenwashing
 
@@ -120,14 +118,14 @@ If we look at another summary metric regarding how healthy a product is, i.e. th
 
 Even if we cannot mathematically conclude on the existence of greenwashing in the food industry, we looked a bit closer at the products located in the (last) bump of the green energy distribution and we found some clear example of it.
 
-Such as this [*chorizo*](https://world.openfoodfacts.org/product/26013077/chorizo-le-flutiau) which is rated with a *nice* E on the Nutri-Score scale and has 1 900 Kj/100g; while using a lot green on its packaging for no obvious reason.
+Such as this [*chorizo*](https://world.openfoodfacts.org/product/26013077/chorizo-le-flutiau) which is rated with a *nice* E on the Nutri-Score scale and has 1&nbsp;900&nbsp;Kj/100g; while using a lot green on its packaging for no obvious reason.
 {% include figure.html image="assets/images/chorizo.jpg" width="50%" %}
 
 
 
 We also found a bunch of “BIO” (“organic” in French) products that proudly, and heavily, use green because it is the colour associated with that label. The issue is that some of these products have extremely bad nutritional properties and that the use of green here could be misinterpreted.
 
-For instance, those [*“organic” biscuits*](https://world.openfoodfacts.org/product/3263852925311/bio-biscuits-tablette-chocolat-au-lait-leader-price) are rated with an E on the Nutri-Score scale and have an energy value of 2 188 Kj/100g.
+For instance, those [*“organic” biscuits*](https://world.openfoodfacts.org/product/3263852925311/bio-biscuits-tablette-chocolat-au-lait-leader-price) are rated with an E on the Nutri-Score scale and have an energy value of 2&nbsp;188&nbsp;Kj/100g.
 
 {% include figure.html image="assets/images/cookies.jpg" width="50%" %}
 
@@ -139,7 +137,7 @@ At the end we should be aware that green is not always synonymous with healthy.
 
 <center>
 <em>
-Dear readers, it’s time to switch to our second thrilling story!
+Dear readers, it’s time to switch to our second thrilling story! s{% include material-ui-icon.html type="fast_forward" %}
 </em>
 </center>
 <hr>
@@ -177,7 +175,7 @@ In other words, **we reformulated our analysis as an unsupervised task**. We did
 
 ## Setting up the clustering model
 
-In our model, we used the nutrition fact columns, which typically provide information for each nutrient per 100g/ml of the product. We decided to control for serving size by translating nutritional information from the per 100g/ml level to a per-serving level, in order to get a more meaningful feature space. The final input to the clustering model included ≈126 000 products and fourteen features (with no missing values in that subset of products): energy, carbohydrates, proteins, fat, saturated fat, trans fat, sugars, sodium, fibre, cholesterol, calcium, iron, vitamin A and vitamin C. This final sample contained approximately one fifth of the full database, but was still representative.
+In our model, we used the nutrition fact columns, which typically provide information for each nutrient per 100g/ml of the product. We decided to control for serving size by translating nutritional information from the per 100g/ml level to a per-serving level, in order to get a more meaningful feature space. The final input to the clustering model included ≈126&nbsp;000 products and fourteen features (with no missing values in that subset of products): energy, carbohydrates, proteins, fat, saturated fat, trans fat, sugars, sodium, fibre, cholesterol, calcium, iron, vitamin A and vitamin C. This final sample contained approximately one fifth of the full database, but was still representative.
 
 As our clustering method, we opted for DBSCAN, as it can scale to a large dataset, it is robust to noise and outliers and we considered its density-based approach more suitable for handling the subtle nutritional differences between similar categories, such as yoghurt and cottage cheese.
 
