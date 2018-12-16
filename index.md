@@ -42,7 +42,7 @@ The data contained in those tables is transcribed in the *Open Food Facts* datab
 
 <br>
 
-Have you ever heard of *greenwashing*? When [*Jay Westervelt*](https://en.wikipedia.org/wiki/Jay_Westerveld) coined this term in 1986, he had in mind companies or organizations that attempt to falsely present their products as “environmentally friendly”. With the turn toward healthier food consumption habits gathering momentum over the past couple of years, critics of the phenomenon have been increasingly vocal about companies using the green colour to appeal to consumers interested in natural, organic, less processed alternatives for their dietary needs. As an especially sarcastic [*one*](http://www.businesspundit.com/the-top-25-greenwashed-products-in-america/) said, “that green tint may have more to do with dollars than chlorophyll”.
+Have you ever heard of *greenwashing*? When [*Jay Westervelt*](https://en.wikipedia.org/wiki/Jay_Westerveld) coined this term in 1986, he had in mind companies or organizations that attempt to falsely present their products as “environmentally friendly”. With the turn towards healthier food consumption habits gathering momentum over the past couple of years, critics of the phenomenon have been increasingly vocal about companies using the green colour to appeal to consumers interested in natural, organic, less processed alternatives for their dietary needs. As an especially sarcastic [*one*](http://www.businesspundit.com/the-top-25-greenwashed-products-in-america/) said, “that green tint may have more to do with dollars than chlorophyll”.
 
 This phenomenon inspired us to try and learn more about the ties between green (or even other colours) and the nutritional properties of a product. Using the *Open Food Facts* database, we extracted twelve different hues from the images of ≈40&nbsp;000 food product packagings. We analysed the presence or dominance of each hue on the packaging of the food product, globally, food category-wise and in terms of its nutritional composition of the products.
 
@@ -107,25 +107,26 @@ So, what about greenwashing? Are there food products that have a *greenish* hue 
 <!-- for the backward link -->
 </div>
 
-To do so, we compared the density of the *Nutri-Score* (more info on what is the *Nutri-Score* is available [towards the end](\#NutriScoreInfo)) for products that have either, *yellow-green*, *green* or *green-cyan* as their dominant packaging colour to all other products. What we can see below is that, generally speaking, green is indeed a determinant factor when assessing the quality of a product: the green curve closely resemble the dashed black one but is shifted towards healthier values of Nutri-Score. Also we cannot observe any suspect statistical behaviour in the tail of the green distribution; which would be correlated with an absence of greenwashing.
-
-{% include plot.html  width="100%" height="600" src="assets/plots/green_vs_all_KDE_energy_100g.html" %}
-
-If we look at another summary metric regarding how healthy a product is, i.e. the energy you would get from eating 100g of it; we can see a slightly different trend. There is a slight bump towards the end of the curves. Had this bump only been present on the green curve it would have meant that there is clearly a suspicious use of this colour. Here we cannot really conclude.
+To answer those questions, we compared the density of the *Nutri-Score* (more info on what is the *Nutri-Score* is available [towards the end](\#NutriScoreInfo)) for products that have either, *yellow-green*, *green* or *green-cyan* as their dominant packaging colour to all other products. What we can see below is that, generally speaking, **green is indeed a determinant factor when assessing the quality of a product**: the green curve closely resemble the dashed black one but is shifted towards healthier values of *Nutri-Score*. Also we cannot observe any suspect statistical behaviour in the tail of the green distribution; which would be correlated with an absence of greenwashing.
 
 {% include plot.html  width="100%" height="600" src="assets/plots/green_vs_all_KDE_nutrition-score-fr_100g.html" %}
 
 
+If we look at another summary metric regarding how healthy a product is, i.e. the energy you would get from eating 100g of it; we can see a slightly different trend. There is a slight bump towards the end of the curves. Had this bump only been present on the green curve it would have meant that there is clearly a suspicious use of this colour. Here we cannot really conclude.
+
+{% include plot.html  width="100%" height="600" src="assets/plots/green_vs_all_KDE_energy_100g.html" %}
+
+
 Even if we cannot mathematically conclude on the existence of greenwashing in the food industry, we looked a bit closer at the products located in the (last) bump of the green energy distribution and we found some clear example of it.
 
-Such as this [*chorizo*](https://world.openfoodfacts.org/product/26013077/chorizo-le-flutiau) which is rated with a *nice* E on the Nutri-Score scale and has 1&nbsp;900&nbsp;Kj/100g; while using a lot green on its packaging for no obvious reason.
+Such as this [*chorizo*](https://world.openfoodfacts.org/product/26013077/chorizo-le-flutiau) which is rated with a *nice* E on the *Nutri-Score* scale and has 1&nbsp;900&nbsp;Kj/100g; while using a lot green on its packaging for no obvious reason.
 {% include figure.html image="assets/images/chorizo.jpg" width="50%" %}
 
 
 
 We also found a bunch of “BIO” (“organic” in French) products that proudly, and heavily, use green because it is the colour associated with that label. The issue is that some of these products have extremely bad nutritional properties and that the use of green here could be misinterpreted.
 
-For instance, those [*“organic” biscuits*](https://world.openfoodfacts.org/product/3263852925311/bio-biscuits-tablette-chocolat-au-lait-leader-price) are rated with an E on the Nutri-Score scale and have an energy value of 2&nbsp;188&nbsp;Kj/100g.
+For instance, those [*“organic” biscuits*](https://world.openfoodfacts.org/product/3263852925311/bio-biscuits-tablette-chocolat-au-lait-leader-price) are rated with an E on the *Nutri-Score* scale and have an energy value of 2&nbsp;188&nbsp;Kj/100g.
 
 {% include figure.html image="assets/images/cookies.jpg" width="50%" %}
 
@@ -137,7 +138,7 @@ At the end we should be aware that green is not always synonymous with healthy.
 
 <center>
 <em>
-Dear readers, it’s time to switch to our second thrilling story! s{% include material-ui-icon.html type="fast_forward" %}
+Dear readers, it’s time to switch to our second thrilling story! {% include material-ui-icon.html type="fast_forward" %}
 </em>
 </center>
 <hr>
@@ -217,7 +218,7 @@ The [*Open Food Facts*](https://world.openfoodfacts.org/data) database is a comm
 <div id="NutriScoreInfo">
 </div>
 
-##### Regarding the Nutri-Score
+##### Regarding the *Nutri-Score*
 
 {% include figure.html image="assets/images/nutriscore.png"  width="300" height="500" %}
 
