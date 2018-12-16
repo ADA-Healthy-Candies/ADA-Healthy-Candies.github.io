@@ -24,4 +24,4 @@ HUES_STR.forEach(hue => {
     selectCat.add(option);
 })
 
-setCatIframe('red');
+setCatIframe('blue-magenta');

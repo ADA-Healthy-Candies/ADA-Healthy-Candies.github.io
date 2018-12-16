@@ -22,7 +22,7 @@ plugins:
 # Site settings
 url: 'https://ADA-Healthy-Candies.github.io/'
 baseurl: ''
-title: Healthy-candies
+title: Tales from the Open Food Facts universe
 description: "ADA Project #EPFL" # Site description and default description, also used in jekyll-seo-tag
 baseurl: "" # the subpath of your site, e.g. /blog
 encoding: utf-8 # Make sure the encoding is right
